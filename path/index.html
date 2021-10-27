@@ -35,7 +35,7 @@
 
   async function main(){
   await liff.init({ liffId: "1656553279-2zQej73Y" })
-  if (liff.isLoggedIn()){
+  if(liff.isLoggedIn()){
     getUserProfile()
   }else {
     liff.login({redirectUri:"https://jirandas.github.io/liff/path"})
